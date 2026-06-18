@@ -11,12 +11,14 @@ export function CTASection() {
             здесь — готовы ли вы стать его частью?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 pulse-button text-lg px-8 py-4"
-            >
-              Начать путь
-            </Button>
+            <a href="#ai-chat">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 pulse-button text-lg px-8 py-4"
+              >
+                Спросить нейросеть
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"

@@ -20,6 +20,12 @@ export function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a
+                href="#ai-chat"
+                className="font-geist text-white hover:text-red-500 transition-colors duration-200"
+              >
+                Нейросеть
+              </a>
+              <a
                 href="#technology"
                 className="font-geist text-white hover:text-red-500 transition-colors duration-200"
               >
@@ -36,7 +42,9 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">В лист ожидания</Button>
+            <a href="#ai-chat">
+              <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Спросить ИИ</Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -54,6 +62,13 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/98 border-t border-red-500/20">
+              <a
+                href="#ai-chat"
+                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Нейросеть
+              </a>
               <a
                 href="#technology"
                 className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
